@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SpeshCart</title>
+  <title>Depot</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<!-- START_HIGHLIGHT -->
+<body class='<%= controller.controller_name %>'>
+<!-- END_HIGHLIGHT -->
 
 <%= yield %>
 
